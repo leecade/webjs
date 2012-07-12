@@ -180,7 +180,7 @@ You can use this to edit the data will be sent to the client. Such as compress, 
                 })
 
                 // Working
-                res.pipelining(function () {
+                res.on('pipelining', function () {
                     switch (this.data.type) {
                         case "one":
                         // do something
