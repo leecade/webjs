@@ -85,6 +85,9 @@ program
                 var filesTasks = new asynclist(_list);
                 filesTasks.assign(function () {
                     console.log('Enjoy!');
+
+                    if (program.compiler || program.all)
+                        console.log('Please run \'npm install less sass\' to install the compilers.');
                     process.exit(1);
                 });
                 filesTasks.run();
