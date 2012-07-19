@@ -100,7 +100,7 @@ program.template = 'jade';
 if (program.mustache) program.template = 'mustache';
 if (program.ejs) program.template = 'ejs';
 program.mode = program.mode || 'pro';
-if (!program.port) program.port = '';
+if (!program.port) program.port = ''; 
 
 var index_html = [
     '<!DOCTYPE html>',
