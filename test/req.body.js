@@ -3,7 +3,7 @@ var Tester = require('./require/test');
 var assert = require("assert");
 
 describe('req.body', function () {
-  it('should return some data in the request url', function () {
+  it('should return the data in the request', function () {
     var app = web.create();
     app
       .use(web.bodyParser())

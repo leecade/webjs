@@ -33,7 +33,7 @@ test.prototype.post = function (url, data, callback) {
     callback(res.body().toString());
   });
   res.headers = {};
-  res.setHeader = res.header = function (key, value) {
+  res.setHeader = function (key, value) {
     this.headers[key] = value;
   };
   res.setEncoding = function () {};
@@ -48,7 +48,7 @@ test.prototype.post = function (url, data, callback) {
   req.url = url;
 
   this.target.emit('request', req, res);
-  if (data) req.ok().end();
+  if (data) req.end();
   return this;
 };
 
