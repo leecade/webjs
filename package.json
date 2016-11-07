@@ -23,8 +23,8 @@
   "main": "index",
   "dependencies": {
     "ejs": "latest",
-    "commander": "0.3.2",
-    "mkdirp": "0.0.7",
+    "commander": "2.9.0",
+    "mkdirp": "0.5.1",
     "asynclist": "latest",
     "eventproxy": "latest",
     "emitter": "latest",
